@@ -24,7 +24,9 @@ def char_dict_to_list(chars_dict):
 def get_details(chars_list):
     for elem in chars_list:
         if elem["char"].isalpha():
-            print(f"The '{elem["char"]}' character was found {elem["num"]} times")
+            character = elem["char"]
+            count = elem["num"]
+            print(f"The '{character}' character was found {count} times")
         else:
             continue
 
